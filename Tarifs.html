@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <title>Tarifs</title>
+</head>
+
+<body>
+    <header>
+
+        <!-- le symbole du menu hambuger qui sera affiche sur les dimensions de l'ecran d'un mobile -->
+        <div id="mobile-nav-btn">
+            <span class="material-symbols-outlined">menu</span>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Solutions</a></li>
+                <li><a href="produits.html">Produits</a></li>
+                <li><a href="secteurs.html">Secteurs</a></li>
+                <li><a href="Tarifs.html">Tarifs</a></li>
+                <li><a href="Ressources.html">Ressources</a></li>
+            </ul>
+        </nav>
+
+
+        <!-- Menu principale qui se'affiche sur les autres écrans sauf sur le telephone -->
+        <nav class="sidenavbar">
+            <ul>
+
+                <li><a href="index.html">Solutions</a></li>
+                <li><a href="produits.html">Produits</a></li>
+                <li><a href="secteurs.html">Secteurs</a></li>
+                <li><a href="Tarifs.html">Tarifs</a></li>
+                <li><a href="Ressources.html">Ressources</a></li>
+            </ul>
+        </nav>
+
+
+
+
+        <aside class="login login-section">
+            <a href="#">Se connecter</a>
+            <a href="#">Essayer Meet au travail</a>
+        </aside>
+
+    </header>
+    <h1 style="text-align: center;">Tarifs</h1>
+</body>
+<script src="https://kit.fontawesome.com/a795ebd712.js" crossorigin="anonymous"></script>
+
+<script>
+    const navbtn = document.getElementById("mobile-nav-btn");
+    const sidenavbar = document.querySelector(".sidenavbar");
+
+    navbtn.addEventListener('click', () => {
+        sidenavbar.classList.toggle('active');
+    })
+
+
+</script>
+
+</html>
